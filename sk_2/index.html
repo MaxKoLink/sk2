@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+    <title>Some</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="#" class="logo"
+            ><img class="" src="img/header_logo.svg" alt="logo"
+          /></a>
+          <ul class="nav-menu">
+            <li class="li-item">
+              <a href="#portfolio" class="a-style">Portfolio</a>
+            </li>
+            <li class="li-item">
+              <a href="#aboutMe" class="a-style">O mně</a>
+            </li>
+            <li class="li-item">
+              <a href="#price" class="a-style">Ceník</a>
+            </li>
+            <li class="li-item">
+              <a href="#kontakty" class="a-style">Kontakty</a>
+            </li>
+          </ul>
+          <a href="tel:+420770114540" class="a-style nav-hide">+420770114540</a>
+        </nav>
+        <div class="headerWrapper">
+          <div class="title">
+            <h1 class="title-name">Serhii Kotliar</h1>
+            <h2 class="title-surname">Váš stylista a kadeřník v Brně</h2>
+          </div>
+          <img src="img/header_man.jpg" alt="man" class="header-image" />
+        </div>
+        <div class="header-button">
+          <a href="https://n688921.yclients.com/" class="button"
+            >Online rezervace</a
+          >
+        </div>
+      </div>
+      <!-- /.container Portfolio -->
+    </header>
+    <div class="container">
+      <div class="portfolio" id="portfolio">
+        <h2 class="portfolio-title">Portfolio</h2>
+        <div class="portfolio-photos">
+          <img src="img/portfolio_photo1.jpg" alt="" class="portfolio-photo1" />
+          <img src="img/portfolio_photo2.jpg" alt="" class="portfolio-photo2" />
+          <img src="img/portfolio_photo3.jpg" alt="" class="portfolio-photo3" />
+          <img src="img/portfolio_photo4.jpg" alt="" class="portfolio-photo4" />
+        </div>
+      </div>
+    </div>
+    <!-- /.container Portfolio -->
+    <!-- /.container aboutMe -->
+    <div class="container">
+      <div class="aboutMe" id="aboutMe">
+        <h2 class="aboutMe-title">O mně</h2>
+        <div class="content-wrapper">
+          <img
+            src="img/aboutMe_photo.jpg"
+            alt="hair cut"
+            class="aboutMe-contentBox__image"
+          />
+          <div class="aboutMe-contentBox">
+            <div class="aboutMe-contentBox__title">
+              Být jako všichni ostatní, nebo si vytvořit vlastní styl?
+            </div>
+            <div class="aboutMe-contentBox__text">
+              Dobrý den, jmenuji se Sergej Kotlár, jsem profesionální kadeřník v
+              Brně, pracuji se střihy pro všechny chutě. Mluvím třemi jazyky:
+              rusky, ukrajinsky a česky. Rád vás uvidím ve svém salonu!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.container aboutMe -->
+    <!-- /.container PRICE -->
+    <div class="container">
+      <div class="price" id="price">
+        <h2 class="price-title">Ceník</h2>
+        <div class="price-priceList">
+          <div class="price-priceList__buttons">
+            <div class="price-priceList__buttons-buttonForm">
+              <button
+                id="btn1"
+                onclick="openbox(event, 'Pan')"
+                class="price-priceList__buttons-buttonForm__button tablinks"
+              >
+                Pánské
+              </button>
+            </div>
+            <div class="price-priceList__buttons-buttonForm">
+              <button
+                id="btn2"
+                onclick="openbox(event, 'Dam')"
+                class="price-priceList__buttons-buttonForm__button tablinks"
+              >
+                Dámské
+              </button>
+            </div>
+            <div class="price-priceList__buttons-buttonForm">
+              <button
+                id="myBtn3"
+                onclick="openbox(event, 'Det')"
+                class="price-priceList__buttons-buttonForm__button tablinks"
+              >
+                Dětské
+              </button>
+            </div>
+            <div class="price-priceList__buttons-buttonForm">
+              <button
+                id="myBtn4"
+                onclick="openbox(event, 'Dal')"
+                class="price-priceList__buttons-buttonForm__button tablinks"
+              >
+                Další služby
+              </button>
+            </div>
+          </div>
+          <div class="price-priceList__prices">
+            <div id="Pan" class="tabcontent tabcontentFix">
+              <div class="price-priceList__prices-price">Stříhání: 350 Kč</div>
+              <div class="price-priceList__prices-price">
+                Pánský střih strojkem: 250 Kč
+              </div>
+              <div class="price-priceList__prices-price">
+                Uprava vousů: 200 Kč
+              </div>
+              <div class="price-priceList__prices-price">Barvení: 900 Kč</div>
+            </div>
+            <div id="Dam" class="tabcontent">
+              <div class="price-priceList__prices-price">
+                Dámský střih na sucho: 400 Kč
+              </div>
+              <div class="price-priceList__prices-price">
+                Dámský střih + mytí + Sušení (Krátké/Střední/Dlouhé) : 500 Kč,
+                600 Kč, 700 Kč
+              </div>
+              <div class="price-priceList__prices-price">
+                Dámský střih komlet (mytí + regenerace, střih, styling): 600 Kč
+              </div>
+              <div class="price-priceList__prices-price">
+                Barvení na jeden tón: 900 Kč, 1200 Kč, 1500 Kč
+              </div>
+              <div class="price-priceList__prices-price">
+                Balayage/Ombré/ Melír: Po domluvě
+              </div>
+            </div>
+            <div id="Det" class="tabcontent">
+              <div class="price-priceList__prices-price">
+                Dětský střih do 6 let: 300 Kč
+              </div>
+            </div>
+            <div id="Dal" class="tabcontent">
+              <div class="price-priceList__prices-price">Coming soon</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.container PRICE -->
+    <div class="container">
+      <h2 class="courses-title">Chcete se naučit stříhat?</h2>
+      <div class="courses">
+        <div class="courses-offer off1">
+          <div class="courses-offer__numeral">01</div>
+          <div class="courses-offer__numeral-text">
+            Vysoce kvalitní vzdělávání
+          </div>
+        </div>
+        <div class="courses-offer off2">
+          <div class="courses-offer__numeral">02</div>
+          <div class="courses-offer__numeral-text">
+            Osvědčení o úspěšném absolvování
+          </div>
+        </div>
+        <div class="courses-offer off3">
+          <div class="courses-offer__numeral">03</div>
+          <div class="courses-offer__numeral-text">Připravené portfolio</div>
+        </div>
+        <div class="courses-offer off4">
+          <div class="courses-offer__numeral">04</div>
+          <div class="courses-offer__numeral-text">
+            <a
+              href="https://www.facebook.com/profile.php?id=10000517734042"
+              class="button btnFixcolor"
+              >Zahajte kadeřnický kurz!</a
+            >
+          </div>
+        </div>
+        <div class="courses-offer2 off5">
+          <img src="img/price_bg.jpg" alt="offer" />
+          <div class="courses-offer2__deal">Vysoce kvalitní vzdělávání</div>
+        </div>
+      </div>
+    </div>
+    <div class="container footer">
+      <div class="footer-info" id="kontakty">
+        <div class="footer-info__map">
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.5821625771305!2d16.610745215686165!3d49.189514879321315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47129455f71920e7%3A0x395edefa2d375043!2sDornych%20404%2C%20602%2000%20Brno-st%C5%99ed-Trnit%C3%A1!5e0!3m2!1sru!2scz!4v1641762323041!5m2!1sru!2scz"
+          ></iframe>
+        </div>
+        <div class="footer-info__information">
+          <h2 class="footer-info__information-contacts">Kontakty</h2>
+          <div class="footer-info__information-adres">
+            HairCutExpress <br />
+            Dornych 404/4, 602 00 Brno-střed <br />
+            +420770114540 <br />
+            Otevírací doba: Každý den 9:00 - 21:00
+          </div>
+          <div class="wrapper-fix">
+            <div class="footer-info__information-socialLinks">
+              <a href="https://www.facebook.com/profile.php?id=10000517734042">
+                <img
+                  src="img/fb.svg"
+                  alt="Facebook Link"
+                  class="footer-info__information-socialLinks__link"
+              /></a>
+              <a href="https://www.instagram.com/serhii_kotliar_/"
+                ><img
+                  src="img/inst.svg"
+                  alt="Instagram link"
+                  class="footer-info__information-socialLinks__link" /></a
+              ><a href="https://vk.com/id519808176"
+                ><img
+                  src="img/vk.png"
+                  alt="Vk"
+                  class="footer-info__information-socialLinks__link"
+              /></a>
+            </div>
+            <img
+              src="img/new_logo2.svg"
+              alt="Sergey Kotliar logo"
+              class="footer-info__information-logo"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
